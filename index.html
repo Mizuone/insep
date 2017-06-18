@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script src="src/insep.js"></script>
+  </head>
+  <body>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var start = performance.now();
+
+      for (var i = 0; i < 1; i++) {
+        var h1Hello = insep.createElem('h1', 'top-heading', 'Hello World!');
+        insep.appendTo('body', h1Hello);
+
+      }
+      console.log(performance.now() - start);
+    });
+    </script>
+</body>
+
+</html>
