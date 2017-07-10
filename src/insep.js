@@ -77,7 +77,7 @@ var insep = (function() {
   var _testStorage = function() {
     try {
       var sessStore = sessionStorage;
-      sessStore.setItem('test');
+      sessStore.setItem('test', 'test');
       sessStore.removeItem('test');
       return true;
     } catch (err) {
